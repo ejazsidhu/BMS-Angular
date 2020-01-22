@@ -12,9 +12,9 @@ const routes: Routes = [
   children:[
     { path: '', redirectTo:'home',pathMatch:'full'},
     { path: 'home', component: ThemeOneComponent },
-    // { path: 'service', component: ServicesComponent },
-    // { path: 'about', component: AboutComponent },
-    // { path: 'contact_us', component: ContactUsComponent },
+    { path: 'service', component: ServicesComponent },
+    { path: 'about', component: AboutComponent },
+    { path: 'contact_us', component: ContactUsComponent },
   ]
 
 },
