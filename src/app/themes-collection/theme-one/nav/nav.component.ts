@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -7,24 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  navbarItem=[
-    {
-      title:'Home',
-      link:'home'
-    },
-    {
-      title:'Service',
-      link:'service'
-    },
-    {
-      title:'About',
-      link:'about'
-    },
-    {
-      title:'Contact Us',
-      link:'contact_us'
-    }
-  ]
+  @Input('navbar') navbarItem
+
+  // navbarItem=[
+  //   {
+  //     title:'Home',
+  //     link:'home'
+  //   },
+  //   {
+  //     title:'Service',
+  //     link:'service'
+  //   },
+  //   {
+  //     title:'About',
+  //     link:'about'
+  //   },
+  //   {
+  //     title:'Contact Us',
+  //     link:'contact_us'
+  //   }
+  // ]
 
   constructor() { }
 

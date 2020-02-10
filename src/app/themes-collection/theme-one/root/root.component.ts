@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralService } from 'src/app/general.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RootComponent implements OnInit {
 
-  constructor() { }
+  navbar:any=[]
+
+  constructor(private generalService:GeneralService) { }
 
   ngOnInit() {
+    this.getData();
+  }
+
+  getData(){
+    this.generalService.getData().subscribe((data:any)=>{
+      console.log('data',data)
+      if(data){
+        this.navbar=data.navBar;
+      }
+    })
   }
 
 }

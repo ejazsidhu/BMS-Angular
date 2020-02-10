@@ -6,6 +6,7 @@ const routes: Routes = [
     path: 'theme_one', 
     loadChildren: () => import('./themes-collection/theme-one/theme-one.module').then(m => m.ThemeOneModule)
   },
+  {path:'', redirectTo:'theme_one',pathMatch:'full'}
 ];
 
 @NgModule({
