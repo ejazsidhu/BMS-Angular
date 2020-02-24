@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "css"
         }
       },
       "root": "",
@@ -28,9 +28,23 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/theme_one/vendor/bootstrap/css/bootstrap.min.css",
+              "src/assets/theme_one/vendor/modal-video/css/modal-video.min.css",
+              "src/assets/theme_one/vendor/leaflet/leaflet.css",
+              "src/assets/theme_one/vendor/owl.carousel2/assets/owl.carousel.min.css",
+              "src/assets/theme_one/vendor/owl.carousel2/assets/owl.theme.default.min.css",
+              "src/assets/theme_one/css/custom.css",
+              
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/theme_one/vendor/jquery/jquery.min.js",
+              "src/assets/theme_one/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              "src/assets/theme_one/vendor/owl.carousel2/owl.carousel.min.js",
+              "src/assets/theme_one/vendor/modal-video/js/modal-video.js",
+              "src/assets/theme_one/vendor/leaflet/leaflet.js",
+              "src/assets/theme_one/js/front.js"
+            ]
           },
           "configurations": {
             "production": {
